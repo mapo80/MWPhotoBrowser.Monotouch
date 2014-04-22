@@ -68,7 +68,7 @@ namespace MWPhotoBrowser {
 		void CancelAnyLoading ();
 	}
 
-	[Model, BaseType (typeof (NSObject))]
+	[Model, BaseType (typeof (NSObject)), Protocol]
 	public partial interface MWPhotoBrowserDelegate {
 
 		[Export ("numberOfPhotosInPhotoBrowser:")]
